@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AGENCY</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body class="overflow-x-hidden bg-slate-50 dark:bg-black dark:text-white">
+    <div id="container" class="m-auto mb-5 min-h-screen w-11/12 max-w-4xl">
+      <header class="sticky top-0 z-10 mb-3 bg-white pb-6">
+        <section id="header-col" class="flex justify-between">
+          <h1 class="pt-4 text-2xl font-bold text-orange-600">
+            <a href="index.html">Agency</a>
+          </h1>
+
+          <div>
+            <button
+              id="hamburger-button"
+              class="h-8- relative w-8 cursor-pointer text-4xl md:hidden"
+            >
+              <!-- &#9776; -->
+              <div
+                class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-black transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-2 before:rounded before:bg-black before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-2 after:rounded after:bg-black after:transition-all after:duration-500 after:content-['']"
+              ></div>
+            </button>
+
+            <nav class="hidden text-black pt-4 space-x-8 text-xl md:block" aria-label="main">
+              <a class="hover:text-orange-300" href="index.html">Home</a>
+              <a class="hover:text-orange-300" href="#about">About Us</a>
+              <a class="hover:text-orange-300" href="#feature">Portfolio</a>
+              <a class="hover:text-orange-300" href="#services">Services</a>
+              <a class="hover:text-orange-300" href="#blog">Blog</a>
+              <a class="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white" href="login.html">Login</a>
+            </nav>
+          </div>
+        </section>
+
+        <!--   -------THE NAV BAR TO DISPLAY ON THE SMALLER SCREEN WHEN TOGGLED -->
+
+        <section
+          id="mobile-menu"
+          class="justify-content-center absolute mt-5 hidden w-full origin-top animate-open-menu flex-col bg-gray-800 text-2xl text-gray-400"
+        >
+          <!-- <button class=" text-7xl sm:text-8xl text-black self-end px-6">
+                    &times;
+                </button> -->
+
+          <nav
+            class="mt-5 flex min-h-screen flex-col items-center"
+            aria-lebel="mobile"
+          >
+            <a
+              href="index.html"
+              class="w-full py-5 text-center hover:bg-gray-900"
+              >Home</a
+            >
+            <a href="#about" class="w-full py-5 text-center hover:bg-gray-900"
+              >About Us</a
+            >
+            <a
+              href="#portfolio"
+              class="w-full py-5 text-center hover:bg-gray-900"
+              >Portfolio</a
+            >
+            <a
+              href="#services"
+              class="w-full py-5 text-center hover:bg-gray-900"
+              >Services</a
+            >
+            <a href="#blog" class="w-full py-5 text-center hover:bg-gray-900"
+              >Blog</a
+            >
+            <a href="login.html" class="w-full py-5 text-center hover:bg-gray-900"
+              >Login</a
+            >
+          </nav>
+        </section>
+      </header>
+
+
+      <!-- =============================================================================================== -->
+
+            <!-- ------------THE MAIN BODY OF THE PAGE--------- -->
+      <main class="">
+        <section id="col-1" class="" data-aos="fade-right">
+          <div id="col-1-inner" class="justify-between sm:flex sm:items-center">
+            <h2
+              class="mt-3 text-3xl font-bold sm:w-5/12 sm:text-2xl lg:text-4xl"
+            >
+              Building Digital Products, Brands &
+              <span class="text-orange-600">Experience</span>
+            </h2>
+
+            <div class="sw-32 sm:w-5/12">
+              <p class="mt-3 text-sm sm:text-xs lg:text-gray-500">
+                Our tagline: “Data-Driven Digital Marketing With Stunning
+                Results” encapsulates what we strive to deliver for clients –
+                unassailable ROI across every digital channel.
+              </p>
+              <button
+                id="digital-contact-btn"
+                class="mt-2 rounded-md bg-orange-500 p-3 font-bold hover:bg-orange-300 sm:text-xs lg:mt-10" >
+                Contact Us
+              </button>
+
+
+
+                        <!--------- ADDRESS FOR DIGITAL PRODUCT------------ -->
+
+            <div id="digital-contact" class=" hidden sm:w-[30%] m-auto">
+              <p id="address1" class=" text-xl font-bold">
+                ADDRESS
+              </p>
+
+              <p id="company-name1" class=""></p>
+              <p id="company-bs1" class=""></p>
+              <p id="mail1" class=""></p>
+              <p id="city1" class=""></p>
+              <p id="phone1" class=""></p>
+              <p id="website1" class=""></p>
+              <p id="street1" class=""></p>
+              <p id="zip-code1" class=""></p>
+              <p id="suite1" class=""></p>
+            </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <!--    ----------COL-2-------- -->
+
+        <section id="col-2" class=""   data-aos="fade-right">
+          <div class="">
+                <div id="col-2-image" class="mt-10" data-aos="fade-right">
+                <img src="./images/Rectangle1.png" alt="" />
+                </div>
+
+                <div>
+                <p class="mt-12 text-center font-bold" data-aos="fade-right">
+                    Trusted By Greatest Companies
+                </p>
+                </div>
+
+                <div id="trusted-logo" class="justify-between sm:flex">
+                <img class="m-auto w-28" src="./images/image28.png" alt="" />
+                <img class="m-auto" src="./images/image29.png" alt="" />
+                <img class="m-auto" src="./images/image30.png" alt="" />
+                <img class="m-auto w-28" src="./images/image31.png" alt="" />
+                </div>
+          </div>
+        </section>
+
+
+
+        <!--    ----------COL-3-------- -->
+
+        <section id="col-3" class="">
+          <div id="col-3-inner" class="mt-16"  data-aos="fade-right">
+            <div>
+              <p
+                id="services"
+                class="mb-6 text-lg font-bold sm:text-center md:ml-14 md:text-left"
+              >
+                Services
+              </p>
+            </div>
+
+                    
+            
+                        <!-- SMALL SCREEN FOR SERVICES -->
+
+            <div id="col-3-images" class=" flex md:hidden overflow-x-hidden">
+                <div id="services" class=" imgs mb-10 min-w-[99.9%] mr-10">
+                    <img src="./images/Rectangle2.png" alt="" />
+                    <p class="my-2 font-bold">Web Development</p>
+                    <p class="text-sm">
+                        Your brand to the world increase your brand’s visibility and
+                        credibility in your industry with dynamic websites. boost
+                        sales 10x your business profit specially.
+                    </p>
+                    <button id="service-btn-1" class=" pt-[2em] border-none text-orange-500">
+                      <span class="">learn more </span> <span class="">&nearr;</span>
+                    </button>
+                </div>
+
+                <div id="col-3-img-2" class="imgs mb-10 min-w-[99.9%] mr-10">
+                    <img src="./images/Rectangle3.png" alt="" />
+                    <p class="my-2 font-bold">Product Design</p>
+                    <p class="text-sm">
+                        Give your customer/client on amazing user experience. Make
+                        your digital & physical products the market favorite with the
+                        best structures and designs
+                    </p>
+                    <button id="service-btn-2" class=" pt-[2em] border-none text-orange-500">
+                      <span class="">learn more </span> <span class="">&nearr;</span>
+                    </button>
+                </div>
+
+                <div id="col-3-img-3" class=" imgs mb-10 min-w-[99.9%] mr-10">
+                    <img src="./images/Rectangle4.png" alt="" />
+                    <p class="my-2 font-bold">Content writing</p>
+                    <p class="text-sm">
+                        Content is king! Nurture leads, warm up projects, keep your
+                        audience engaged with customer-oriented content marketing
+                        strategies and authority.
+                    </p>
+                    <button id="service-btn-3" class=" pt-[2em] border-none text-orange-500">
+                      <span class="">learn more </span> <span class="">&nearr;</span>
+                    </button>
+                </div>
+            </div>
+
+
+                             <!-- LARGER SCREEN FOR SERVICES -->
+
+            <div id="col-3-images" class="m-auto hidden justify-evenly sm:w-2/3 md:flex md:w-full">
+                <div id="services" class="mb-10 md:w-3/12">
+                    <img src="./images/Rectangle2.png" alt="" />
+                    <p class="my-2 font-bold">Web Development</p>
+                    <p class="text-sm">
+                        Your brand to the world increase your brand’s visibility and
+                        credibility in your industry with dynamic websites. boost
+                        sales 10x your business profit specially.
+                    </p>
+                    <button id="servicelg-btn-1" class=" pt-[2em] border-none text-orange-500">
+                      <span class="">learn more </span> <span class="">&nearr;</span>
+                    </button>
+                </div>
+
+                <div id="col-3-img-2" class="mb-10 md:w-3/12">
+                    <img src="./images/Rectangle3.png" alt="" />
+                    <p class="my-2 font-bold">Product Design</p>
+                    <p class="text-sm">
+                        Give your customer/client on amazing user experience. Make
+                        your digital & physical products the market favorite with the
+                        best structures and designs
+                    </p>
+                    <button id="servicelg-btn-2" class=" pt-[2em] border-none text-orange-500">
+                      <span class="">learn more </span> <span class="">&nearr;</span>
+                    </button>
+                </div>
+
+                <div id="col-3-img-3" class="mb-10 md:w-3/12">
+                    <img src="./images/Rectangle4.png" alt="" />
+                    <p class="my-2 font-bold">Content writing</p>
+                    <p class="text-sm">
+                        Content is king! Nurture leads, warm up projects, keep your
+                        audience engaged with customer-oriented content marketing
+                        strategies and authority.
+                    </p>
+                    <button id="servicelg-btn-3" class=" pt-[2em] border-none text-orange-500">
+                      <span class="">learn more </span> <span class="">&nearr;</span>
+                    </button>
+                </div>
+            </div>
+
+
+
+            <div id="service-learn" class=" hidden text-orange-500">
+              <p id="learn-more-service" class=" sm:w-1/2 m-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nostrum, 
+                ratione, facere tenetur repellendus voluptates doloribus voluptas, 
+                ipsam rem delectus maiores vel impedit adipisci expedita alias totam commodi eius officiis?
+              </p>
+            </div>
+
+
+                        <!-- SERVICES BUTTONS -->
+            <div class="w-full">
+              <div id="arrow" class="float-right flex  justify-between">
+                <button id="left-col-3" class="rounded-full border-hidden pb-3 px-2 text-5xl text-orange-500 hover:bg-orange-500 hover:text-white  " >
+                  &larr;
+                </button>
+
+                <button
+                  id="right-col-3"
+                  class="rounded-full border-hidden pb-3 px-2 text-5xl text-orange-500 hover:bg-orange-500 hover:text-white "
+                >
+                  &rarr;
+              </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+        <!--    ----------COL-4-------- -->
+        <section id="col-4" class="">
+          <div id="col-4-inner" class="">
+            <div id="about" class="mt-32 mb-5 sm:m-auto sm:mt-28 sm:mb-10 sm:w-1/2 md:w-full" data-aos="fade-right">
+              <p class="mb-3 font-bold sm:text-center md:mb-10 md:text-left">
+                About Us
+              </p>
+
+              <div
+                id="about-inner"
+                class="items-center justify-between md:flex"
+              >
+                <div class="text-2xl font-bold text-orange-600 md:w-2/5">
+                  <p>We Always Prioritize Quality and Unique style</p>
+                </div>
+
+                <div id="about-inner-2" class="md:w-2/5">
+                  <p class="py-2 text-sm md:text-xs">
+                    When you’re looking to stand out from the crowd, doing the
+                    ordinary won’t do. Instead, you need a team with a mix of
+                    creative
+                  </p>
+                  <button id="about-learn"
+                    class="rounded-md bg-orange-500 p-2 hover:bg-orange-300 md:text-xs"
+                  >
+                    learn more
+                  </button>
+
+                    <!-- Learn MORE Hiden Text -->
+                  <div id="about-learn-text" class=" hidden text-orange-500">
+                    <p id="learn-more-about" class="  m-auto">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nostrum, ratione, facere tenetur repellendus voluptates doloribus voluptas, ipsam rem delectus maiores vel impedit adipisci expedita alias totam commodi eius officiis?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="about-img" class="" data-aos="fade-right">
+              <img src="./images/Rectangle5.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+
+
+                    <!-- ------col-5------ -->
+
+        <section id="col-5" class="">
+          <div id="col-5-inner" class=""   data-aos="fade-right">
+            <div id="feature" class="">
+              <p class="mt-16 mb-2 font-bold">Featured Project</p>
+            </div>
+
+            <div id="all" class="mb-5 space-x-3 text-center text-xs sm:block sm:space-x-7 lg:space-x-20">
+                <a class="hover:text-orange-400" href="#">All</a>
+                <a class="hover:text-orange-400" href="#">UI/UX design</a>
+                <a class="hover:text-orange-400" href="#">Content writing</a>
+                <a class="hover:text-orange-400" href="#">Data analysis</a>
+                <a class="hover:text-orange-400" href="#">Web development</a>
+                <a class="hover:text-orange-400" href="#">Photography</a>
+            </div>
+
+            <!-- DISPLAY SLIDER FOR SMALLER SCREENS (HIDDEN FROM {}SM) -->
+                            <!-- IMAGES CLASS ARE NOT FROM TAILWIND. ITS FOR JS -->
+            <div id="small-screen" class="  flex justify-between overflow-x-hidden sm:hidden">
+                <div class=" images mr-10 min-w-full">
+                    <img class="" src="./images/Rectangle6.png" alt="" />
+                </div>
+
+                <div class="images mr-10 min-w-full">
+                    <img class="" src="./images/Rectangle7.png" alt="" />
+                </div>
+
+                <div class=" mr-10 images min-w-full">
+                    <img class="" src="./images/Rectangle8.png" alt="" />
+                </div>
+            </div>
+
+            <!-- DISPLAY SLIDER FOR LARGER SCREEN (WILL SHOW FROM {}SM) -->
+
+            <div id="larger-screen" class="hidden justify-between sm:flex">
+              <div id="imgs" class="w-44 md:w-full lg:w-72">
+                <img src="./images/Rectangle6.png" alt="" />
+              </div>
+
+              <div id="imgs" class="w-44 md:w-full lg:w-72">
+                <img src="./images/Rectangle7.png" alt="" />
+              </div>
+
+              <div id="imgs" class="w-44 md:w-full lg:w-72">
+                <img src="./images/Rectangle8.png" alt="" />
+              </div>
+            </div>
+
+            <div class="">
+              <button id="featured-btn"
+                class="mt-8 rounded-md bg-orange-500 p-2 hover:bg-orange-300"
+              >
+                learn more
+              </button>
+            </div>
+
+            <!-- Featured Hidden Text -->
+            <div id="featured-learn-text" class=" hidden text-orange-500">
+              <p id="featured-more-about" class=" sm:w-1/2 m-auto">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nostrum, ratione, facere tenetur repellendus voluptates doloribus voluptas, ipsam rem delectus maiores vel impedit adipisci expedita alias totam commodi eius officiis?
+              </p>
+            </div>
+
+                <!-- FEATURED NEXT AND PREVIOUS BUTTONS -->
+
+            <div class="w-full">
+              <div id="arrow" class="float-right flex  justify-between sm:hidden">
+                <button id="left-col-5" class="rounded-full border-hidden border-orange-500 px-2 text-orange-500 hover:bg-orange-500 hover:text-white text-5xl pb-3" >
+                  &larr;
+                </button>
+
+                <button id="right-col-5" class="rounded-full border-hidden border-orange-500 px-2 text-orange-500 hover:bg-orange-500 hover:text-white text-5xl pb-3">
+                  &rarr;
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--  ------------- COL-6------------ -->
+
+        <section id="col-6">
+          <div id="col-6-inner" class=""  data-aos="fade-right">
+            <div id="testimonial" class="mt-28">
+              <p class="text-center text-sm font-bold">Testimonials</p>
+
+              <p class="mb-10 text-center font-bold text-orange-600" >
+                What Our Customer is Saying
+              </p>
+            </div>
+          </div>
+
+          <div id="cstm-img" class="m-auto sm:w-1/2"  data-aos="fade-right">
+            <div id="img-1" class="m-auto mb-5 flex w-1/2 justify-between">
+              <img class="w-10" src="./images/Ellipse5.png" alt="" />
+              <img class="w-10" src="./images/Ellipse4.png" alt="" />
+            </div>
+
+            <div id="img-2" class="flex justify-between">
+              <img class="w-10" src="./images/Ellipse-4.png" alt="" />
+              <img class="w-10" src="./images/Ellipse6.png" alt="" />
+            </div>
+
+            <div id="img-3" class="">
+              <img class="m-auto w-10" src="./images/Ellipse3.png" alt="" />
+            </div>
+          </div>
+
+          <div>
+            <p class="m-auto text-center text-xs text-stone-500 sm:w-1/2 my-10"  data-aos="fade-right">
+              “I have really enjoyed working with them. they are very fast and
+              reliable . That’s why i always come back”
+            </p>
+          </div>
+        </section>
+
+        <!-- ------ COL-7------ -->
+
+        <section id="col-7">
+          <div id="col-inner" class=""  data-aos="fade-right">
+            <p id="in-mind" class="mt-20 text-center font-bold">
+              Have a Project in Mind?
+            </p>
+
+            <div class="m-auto my-3 w-5/12 sm:w-28">
+              <button id="in-mind-btn" class="m-auto w-full rounded-md bg-orange-500 p-2 hover:bg-orange-300"
+              >
+                Contact Us
+              </button>
+            </div>
+
+
+            <!-- ADDRESS PROJECT IN MIND -->
+            <div id="in-mind-contact" class=" hidden sm:w-[30%] m-auto">
+              <p id="address" class=" text-xl font-bold">
+                ADDRESS
+              </p>
+
+              <p id="company-name2" class=""></p>
+              <p id="company-bs2" class=""></p>
+              <p id="mail2" class=""></p>
+              <p id="city2" class=""></p>
+              <p id="phone2" class=""></p>
+              <p id="website2" class=""></p>
+              <p id="street2" class=""></p>
+              <p id="zip-code2" class=""></p>
+              <p id="suite2" class=""></p>
+            </div>
+          </div>
+        </section>
+
+        <!-- THE FOOTER -->
+
+        <footer class="bg-gray-800"  data-aos="fade-right">
+          <div
+            id="footer-inner"
+            class="m-auto mt-20 justify-between text-center text-xs text-gray-400 md:flex md:w-3/4 md:text-left"
+          >
+            <div id="footer-1" class="pt-5" >
+              <ul class="space-y-2">
+                <li class="p-2 hover:bg-gray-900">
+                  <strong class="text-white">
+                    <a href="#">Products</a>
+                  </strong>
+                </li>
+                <li class="p-2 hover:bg-gray-900"><a href="#">Agency</a></li>
+                <li class="p-2 hover:bg-gray-900">
+                  <a href="#">Data Governance</a>
+                </li>
+                <li class="p-2 hover:bg-gray-900">
+                  <a href="#">Virtual Events</a>
+                </li>
+                <li class="p-2 hover:bg-gray-900">
+                  <a href="#">Virtual Users</a>
+                </li>
+                <li class="p-2 hover:bg-gray-900">
+                  <a href="#">Behavioral Analytics</a>
+                </li>
+                <li class="p-2 hover:bg-gray-900"><a href="#">Connect</a></li>
+              </ul>
+            </div>
+
+            <div id="footer-2" class="pt-5">
+              <ul class="space-y-2">
+                <li class="p-2 hover:bg-gray-900">
+                  <strong class="text-white">
+                    <a href="#">Explore</a>
+                  </strong>
+                </li>
+                <li class="p-2 hover:bg-gray-900"><a href="#">Resources</a></li>
+                <li class="p-2 hover:bg-gray-900"><a href="#">blog</a></li>
+                <li class="p-2 hover:bg-gray-900"><a href="#">Documents</a></li>
+              </ul>
+            </div>
+
+            <div id="footer-3" class="pt-5">
+              <ul class="space-y-2">
+                <li class="p-2 hover:bg-gray-900">
+                  <strong class="text-white">
+                    <a href="#">Community</a>
+                  </strong>
+                </li>
+                <li class="p-2 hover:bg-gray-900">
+                  <a href="#">Community Central</a>
+                </li>
+                <li class="p-2 hover:bg-gray-900"><a href="#">Support</a></li>
+                <li class="p-2 hover:bg-gray-900"><a href="#">Help</a></li>
+                <li class="p-2 hover:bg-gray-900"><a href="#">My info</a></li>
+              </ul>
+            </div>
+
+            <div id="footer-4" class="pt-5">
+              <ul class="space-y-2">
+                <li class="p-2 hover:bg-gray-900">
+                  <strong class="text-white">
+                    <a href="#">Company</a>
+                  </strong>
+                </li>
+                <li class="p-2 hover:bg-gray-900"><a href="#">About us</a></li>
+                <li class="p-2 hover:bg-gray-900"><a href="#">Partners</a></li>
+                <li class="p-2 hover:bg-gray-900"><a href="#">Customers</a></li>
+                <li class="p-2 hover:bg-gray-900">
+                  <a href="#">Contact us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <small class=" ">
+            <p class="py-10 text-center text-gray-400">
+              &copy; 2023 ABC. All rights reserved.
+            </p>
+          </small>
+        </footer>
+
+
+        
+
+        <small class="">
+          <p class=" text-center space-x-5">
+            <a>DEVELOPER: @mawzis</a>
+            <a>DESIGNER: @prescopella</a>
+          </p>
+        </small>
+      </main>
+    </div>
+
+
+    
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /></title>
+</head>
+<body class="overflow-x-hidden bg-slate-50 dark:bg-black dark:text-white m-0">
+    <div id="container" class="m-auto mb-5 min-h-screen w-11/12 max-w-4xl">
+        <header class="sticky top-0 z-10 mb-3 bg-white pb-6">
+            <section id="header-col" class="flex justify-between">
+              <h1 class="pt-4 text-2xl font-bold text-orange-600">
+                <a href="index.html">Agency</a>
+              </h1>
+    
+              <div>
+                <button
+                  id="hamburger-button"
+                  class="h-8- relative w-8 cursor-pointer text-4xl md:hidden"
+                >
+                  <!-- &#9776; -->
+                  <div
+                    class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-black transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-2 before:rounded before:bg-black before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-2 after:rounded after:bg-black after:transition-all after:duration-500 after:content-['']"
+                  ></div>
+                </button>
+    
+                <nav class="hidden text-black pt-4 space-x-8 text-xl md:block" aria-label="main">
+                  <a class="hover:text-orange-300" href="index.html">Home</a>
+                  <a class="hover:text-orange-300" href="#about">About Us</a>
+                  <a class="hover:text-orange-300" href="#portfolio">Portfolio</a>
+                  <a class="hover:text-orange-300" href="#services">Services</a>
+                  <a class="hover:text-orange-300" href="#blog">Blog</a>
+                  <a
+                    class="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white"
+                    href="#login"
+                    >Login</a
+                  >
+                </nav>
+              </div>
+            </section>
+    
+            <!--   -------THE NAV BAR TO DISPLAY ON THE SMALLER SCREEN WHEN TOGGLED -->
+    
+            <section
+              id="mobile-menu"
+              class="justify-content-center absolute mt-5 hidden w-full origin-top animate-open-menu flex-col bg-gray-800 text-2xl text-gray-400"
+            >
+              <!-- <button class=" text-7xl sm:text-8xl text-black self-end px-6">
+                        &times;
+                    </button> -->
+    
+                <nav
+                    class="mt-5 flex min-h-screen flex-col items-center"
+                    aria-lebel="mobile">
+                    <a
+                    href="index.html"
+                    class="w-full py-5 text-center hover:bg-gray-900"
+                    >Home</a
+                    >
+                    <a href="#about" class="w-full py-5 text-center hover:bg-gray-900"
+                    >About Us</a
+                    >
+                    <a
+                    href="#portfolio"
+                    class="w-full py-5 text-center hover:bg-gray-900"
+                    >Portfolio</a
+                    >
+                    <a
+                    href="#services"
+                    class="w-full py-5 text-center hover:bg-gray-900"
+                    >Services</a
+                    >
+                    <a href="#blog" class="w-full py-5 text-center hover:bg-gray-900"
+                    >Blog</a
+                    >
+                    <a href="#login" class="w-full py-5 text-center hover:bg-gray-900"
+                    >Login</a
+                    >
+                </nav>
+            </section>
+        </header>
+
+                    <!--  -------------LOG IN  AREA---------------  -->
+        <section id="log-1">
+          <form action="" method="post">
+            <div id="log-1-inner" class="text-center">
+                <div id="login" class="text-2xl mt-5 mb-5">Sign in to Agency</div>
+            </div>
+
+            <div id="log-input" class=" sm:w-1/2 m-auto border py-10 rounded-lg shadow-xl mb-10 px-2">
+                <div id="mail" class=" mb-5">
+                    <label for="email" id="" class="">Email/Username</label>
+                    <input name="username" type="email" id="mail"  class=" w-full" placeholder="Enter email or Username" required class="">
+                </div>
+
+                <div id="pswd" class=" mb-5">
+                    <div class=" flex justify-between">
+                        <label for="password">Password </label>
+                        <button class=" text-blue-800 border-none">Forgot Password</button>
+                    </div>
+                    <input name="password" type="password" id="password" class=" w-full" placeholder="Enter Password" required>
+                </div>
+
+                <div>
+                    <button id="log-btn" class=" w-full text-base bg-orange-600 text-white rounded-md p-1 font-medium">Sign in</button>
+                </div>
+
+
+                <div id="sign-up" class="text-center my-5">
+                    <p class="">New to Agency? <button class=" text-blue-800 border-none">Create an account</button></p>
+                </div>
+            </div>
+          </form>
+        </section>
+
+            
+
+                <!--  ----LOGIN OPTIONS------ -->
+
+        <section id="log-2" class="">
+            <div id="login-option" class="sm:w-1/4 m-auto text-center">
+
+                <div id="login-google" class=" my-5">
+                    <button id="google-button" class="inline-flex items-center ">
+                        <img class="w-8 mr-5" src="./images/google.png" alt="">
+                        <a class="">Sign in with Google</a>
+                    </button>
+                </div>
+
+                <div id="login-fb" class=" my-5">
+                    <button id="fb-button" class=" inline-flex items-center">
+                        <img class="w-8 mr-2" src="./images/fb.png" alt="">
+                        <p class="">Sign in with Facebook</p>
+                    </button>
+                </div>
+
+                <div id="login-fb" class="">
+                    <button id="twitter-btn" class="inline-flex items-center">
+                        <img class="w-8 mr-5" src="./images/twitterlog.jpg" alt="">
+                        <p class="">Sign in with Twitter</p>
+                    </button>
+                </div>
+
+                <div id="login-fb" class=" my-5">
+                <button id="linkedin-btn" class="inline-flex items-center">
+                    <img class=" w-8 mr-2" src="./images/linkedin.jpg" alt="">
+                    <p class="">Sign in with LinkedIn</p>
+                </button>
+                </div>
+            </div>
+        </section>
+
+
+          <!-- THE FOOTER -->
+
+        <footer class="bg-gray-800"  data-aos="fade-right">
+            <div
+              id="footer-inner"
+              class="m-auto mt-32 justify-between text-center text-xs text-gray-400 md:flex md:w-3/4 md:text-left"
+            >
+              <div id="footer-1" class="pt-5" >
+                <ul class="space-y-2">
+                  <li class="p-2 hover:bg-gray-900">
+                    <strong class="text-white">
+                      <a href="#">Products</a>
+                    </strong>
+                  </li>
+                  <li class="p-2 hover:bg-gray-900"><a href="#">Agency</a></li>
+                  <li class="p-2 hover:bg-gray-900">
+                    <a href="#">Data Governance</a>
+                  </li>
+                  <li class="p-2 hover:bg-gray-900">
+                    <a href="#">Virtual Events</a>
+                  </li>
+                  <li class="p-2 hover:bg-gray-900">
+                    <a href="#">Virtual Users</a>
+                  </li>
+                  <li class="p-2 hover:bg-gray-900">
+                    <a href="#">Behavioral Analytics</a>
+                  </li>
+                  <li class="p-2 hover:bg-gray-900"><a href="#">Connect</a></li>
+                </ul>
+              </div>
+  
+              <div id="footer-2" class="pt-5">
+                <ul class="space-y-2">
+                  <li class="p-2 hover:bg-gray-900">
+                    <strong class="text-white">
+                      <a href="#">Explore</a>
+                    </strong>
+                  </li>
+                  <li class="p-2 hover:bg-gray-900"><a href="#">Resources</a></li>
+                  <li class="p-2 hover:bg-gray-900"><a href="#">blog</a></li>
+                  <li class="p-2 hover:bg-gray-900"><a href="#">Documents</a></li>
+                </ul>
+              </div>
+  
+              <div id="footer-3" class="pt-5">
+                <ul class="space-y-2">
+                  <li class="p-2 hover:bg-gray-900">
+                    <strong class="text-white">
+                      <a href="#">Community</a>
+                    </strong>
+                  </li>
+                  <li class="p-2 hover:bg-gray-900">
+                    <a href="#">Community Central</a>
+                  </li>
+                  <li class="p-2 hover:bg-gray-900"><a href="#">Support</a></li>
+                  <li class="p-2 hover:bg-gray-900"><a href="#">Help</a></li>
+                  <li class="p-2 hover:bg-gray-900"><a href="#">My info</a></li>
+                </ul>
+              </div>
+  
+              <div id="footer-4" class="pt-5">
+                <ul class="space-y-2">
+                  <li class="p-2 hover:bg-gray-900">
+                    <strong class="text-white">
+                      <a href="#">Company</a>
+                    </strong>
+                  </li>
+                  <li class="p-2 hover:bg-gray-900"><a href="#">About us</a></li>
+                  <li class="p-2 hover:bg-gray-900"><a href="#">Partners</a></li>
+                  <li class="p-2 hover:bg-gray-900"><a href="#">Customers</a></li>
+                  <li class="p-2 hover:bg-gray-900">
+                    <a href="#">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <small class=" ">
+              <p class="py-10 text-center text-gray-400">
+                &copy; 2023 ABC. All rights reserved.
+              </p>
+            </small>
+
+        </footer>
+    </div>
+
+    
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
